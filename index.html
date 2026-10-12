@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Idiqlat:wght@200;300;400&family=Lora:ital,wght@0,400..700;1,400..700&family=Matemasie&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css.css" />
+    <script src="prueba.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="entrada">
+      <div class="capa-entrada">
+        <h1>¿Qué significa ser el más fuerte?</h1>
+        <button id="entrar" type="button">Entrar</button>
+      </div>
+    </div>
+
+    <div class="contenedor">
+      <div class="frases">
+        <p class="fraseGeto">
+          ¿Eres <strong>el más fuerte</strong> porque eres
+          <strong>Satoru Gojo</strong>...
+        </p>
+      </div>
+      <div class="personajes">
+        <img src="geto.png" alt="Geto Suguru" id="geto" />
+        <img src="gojo.png" alt="Gojo Satoru" id="gojo" />
+      </div>
+
+      <div class="frases">
+        <p class="fraseGojo">
+          ¿O eres <strong>Satoru Gojo</strong><br />
+          porque eres<br />
+          <strong>el más fuerte</strong>?…
+        </p>
+      </div>
+    </div>
+    <button
+      id="cambiarPersonaje"
+      type="button"
+      aria-label="Cambiar entre Gojo y Geto"
+    >
+      <img id="koiNegro" src="peznegro.png" alt="" />
+      <img id="koiBlanco" src="pezblanco.png" alt="" />
+    </button>
+
+    <audio id="musica" src="cancion.mp3" loop></audio>
+    <audio src="primeraFrase.mp3" id="primeraFrase"></audio>
+    <audio src="SegundaFrase.mp3" id="segundaFrase"></audio>
+  </body>
+</html>
