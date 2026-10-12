@@ -84,6 +84,7 @@ div.contenedor {
     opacity: 0;
     visibility: hidden;
     transition: opacity 2s ease, visibility 0s 2s;
+    pointer-events: none;
 }
 
 .capa-entrada {
@@ -148,15 +149,97 @@ div.contenedor {
 #koiBlanco {
     right: 0;
     opacity: 0;
-    transform: rotate(-30deg);
+    transform: rotate(30deg);
 }
 
 body.oscuro #koiNegro {
     opacity: 0;
-    transform: rotate(30deg);
+    transform: rotate(-30deg);
 }
 
 body.oscuro #koiBlanco {
     opacity: 1;
     transform: rotate(0deg);
+}
+
+
+
+
+
+
+/* MEDIA CONFIGURACIÓN */
+
+
+
+
+
+
+
+
+@media (max-width : 800px) {
+
+    #entrada h1 {
+        transform: translateY(25px);
+        font-size: clamp(24px, 8vw, 36px);
+
+
+    }
+
+
+
+    #entrar {
+        transform: translateY(10px);
+        font-size: 1rem;
+    }
+
+    #entrada {
+        background-image: url("Geto\ y\ Gojo\ en\ vertical.png");
+        background-size: cover;
+    }
+
+    .frases {
+        font-size: 3rem;
+        width: 100px;
+
+    }
+
+
+    div.contenedor {
+        flex-direction: column;
+    }
+
+
+    .personajes {
+        order: 1;
+        width: 80vw;
+        height: 80vw;
+        max-width: 350px;
+        max-height: 350px;
+
+    }
+
+    div.frases {
+        order: 2;
+        width: 90%;
+        font-size: 2rem;
+    }
+
+    .fraseGojo {
+        display: none;
+    }
+
+    body.oscuro .fraseGeto {
+        display: none;
+    }
+
+    body.oscuro .fraseGojo {
+        display: block;
+    }
+
+
+}
+
+#cambiarPersonaje #koiBlanco,
+#cambiarPersonaje #koiNegro {
+    transition: none;
 }
