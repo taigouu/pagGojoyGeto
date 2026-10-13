@@ -21,7 +21,7 @@ function cambiarPersonaje() {
         { opacity: 0, transform: "rotate(30deg)" },
         { opacity: 1, transform: "rotate(0deg)" },
       ],
-      { duration: 700, easing: "ease-in-out" },
+      { duration: 1000, easing: "ease-in-out" },
     );
     koiNegro.animate(
       [
@@ -29,7 +29,7 @@ function cambiarPersonaje() {
         { opacity: 1, transform: "rotate(-20deg)", offset: 0.6 },
         { opacity: 0, transform: "rotate(-30deg)" },
       ],
-      { duration: 700, easing: "ease-in-out" },
+      { duration: 1000, easing: "ease-in-out" },
     );
     segundaFrase.play();
   } else {
@@ -39,15 +39,16 @@ function cambiarPersonaje() {
         { opacity: 1, transform: "rotate(0deg)" },
         { opacity: 0, transform: "rotate(-30deg)" },
       ],
-      { duration: 700, easing: "ease-in-out" },
+      { duration: 1000, easing: "ease-in-out" },
     );
     koiNegro.animate(
       [
         { opacity: 0, transform: "rotate(30deg)" },
         { opacity: 1, transform: "rotate(0deg)" },
       ],
-      { duration: 700, easing: "ease-in-out" },
+      { duration: 1000, easing: "ease-in-out" },
     );
+    primeraFrase.play();
   }
 }
 
